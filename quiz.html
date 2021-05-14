@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+
+    <!-- css file link -->
+    <link rel="stylesheet" href="./quiz.css">
+</head>
+<body>
+    <!--<header>
+        <img src="./logo.png" alt="img" id="img" class="img">
+        <h1 id="title">Today's Quiz</h1>
+        <img src="./logo.png" alt="img" id="img" class="img">
+    </header> -->
+    <nav>   
+        <header >
+        <img src="./logo.png" alt="logo" class="logo">
+
+            <ul class="nav__links">
+                <li><h1>MY   QUIZ   PROJECT</h1></li>
+            </ul>
+  
+        <img src="./logo.png" alt="logo" class="logo">
+        </header>
+    </nav>
+    <br/>
+
+    <!--question nos row-->
+
+    <header>
+        <ul class="nav__links">
+            <li><button type="button" class="one" id="ao" style="background-Color:#d1426d">1</button></li>
+            <li><button type="button" class="two" id="ao">2</button></li>
+            <li><button type="button" class="three" id="ao">3</button></li>
+            <li><button type="button" class="four" id="ao">4</button></li>
+            <li><button type="button" class="five" id="ao">5</button></li>
+            <li><button type="button" class="six" id="ao">6</button></li>
+        </ul>
+
+    <p class="nav__links">Question Palette</p>
+    <h3>00 minutes : 00 seconds</h3>
+    </header>
+    
+
+    <!-- quiz-container -->
+    <div id="quiz-container">
+        <!-- question container -->
+        <div class="questions">
+            <h2 id="question"></h2>
+            <ol type="A">
+                <li class="option"><span id="option0" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option1" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option2" onclick="calcScore(this)"></span></li>
+                <li class="option"><span id="option3" onclick="calcScore(this)"></span></li>
+            </ol>
+            <h4 id="stat"></h4>
+        </div>
+    </div>
+    <footer>
+        <div class="buttons">
+            <button type="button" class="previous">Previous</button>
+            <button type="button" class="next">Next</button>
+            <button type="button" class="submit">Submit</button>
+        </div>
+
+    </footer>
+
+    <!-- scoreboard section -->
+    <div id="scoreboard">
+        <img src="./logo.png" alt="">
+        <h2 id="score-title">Your Score</h2>
+        <h2 id="score"></h2>
+        <p> Time taken <span class="time_taken"></span></p>
+        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+        <button type="button" id="check-answer" onclick="checkAnswer()">Check Answers</button>
+    </div>
+
+    <!-- answers section -->
+    <div id="answerBank">
+        <h2>Answers :</h2>
+        <ol type="1" id="answers">
+
+        </ol>
+        <button type="button" id="score-btn" onclick="backToQuiz()">Back to Quiz</button>
+    </div>
+
+    <!-- javascript file source -->
+    <script src="./quizprev.js">
+    </script>
+
+</body>
+</html>
